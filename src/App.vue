@@ -1,4 +1,6 @@
 <script setup>
+  import {RouterView} from 'vue-router';
+  import { RouterLink } from 'vue-router';
   // options API
   import {ref} from 'vue'
 
@@ -13,18 +15,13 @@
 </script>
 
 <template>
-  <h1>{{ name }}</h1>
-  <p v-if="status === 'active'"> User is active</p>
-  <p v-else-if="status === 'pending'"> User is pending</p>
-  <p v-else> User is inactive</p>
-  <code> Counter: {{ counter }}</code>
-  <br>
-  <button @click="add">add</button>
-  <ul>
-    <li v-for="task in tasks" :key="task">{{ task }}</li>
-  </ul>
-
-
+  <nav>
+    <RouterLink to="/">HOME</RouterLink>
+    <RouterLink to="/jobs">JOBS</RouterLink>
+  </nav>
+  <!-- Use this when you are using Vue app -->
+  <!-- Use <slot /> if using inertia in laravel -->
+  <RouterView /> 
 </template>
 
 <style scoped>
