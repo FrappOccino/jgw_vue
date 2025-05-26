@@ -1,4 +1,5 @@
 <script setup>
+  import Nav from './components/Nav.vue';
   import {RouterView} from 'vue-router';
   import { RouterLink } from 'vue-router';
   // options API
@@ -15,10 +16,7 @@
 </script>
 
 <template>
-  <nav>
-    <RouterLink to="/">HOME</RouterLink>
-    <RouterLink to="/jobs">JOBS</RouterLink>
-  </nav>
+  <Nav />
   <!-- Use this when you are using Vue app -->
   <!-- Use <slot /> if using inertia in laravel -->
   <RouterView /> 
