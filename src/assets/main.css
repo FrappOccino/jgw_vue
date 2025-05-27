@@ -1,35 +1,109 @@
-/* @import './base.css';
+:root {
+  /* Primary (Blue - 3 shades) */
+  --primary-100: #3a5eff;
+  --primary-200: #1a40e0;
+  --primary-300: #1029a0;
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+  /* Secondary / Accent Colors */
+  --accent: #ff4f81;        /* For highlights, links */
+  --secondary: #00c2ff;     /* Button hovers, focus rings */
+
+  /* Status Colors */
+  --success: #28c76f;
+  --warning: #ff9f43;
+  --error: #ea5455;
+  --info: #00cfe8;
+
+  /* Backgrounds */
+  --background-main: #0e0e0e;
+  --background-secondary: #1a1a1a;
+  --background-tertiary: #2a2a2a;
+
+  /* Text Colors */
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  --text-muted: #999999;
+
+  /* Borders and UI Elements */
+  --border: #333333;
+  --divider: #444444;
+
+  /* Hover / Focus */
+  --hover: rgba(255, 255, 255, 0.05);
+  --focus: rgba(0, 194, 255, 0.3);
+
+  /* Shadows */
+  --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.5);
+  --shadow-hard: 0 4px 12px rgba(0, 0, 0, 0.8);
+
+  /* Border radius */
+  --border-radius: 10px;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+} 
+
+body{
+  background-color: var(--background-main);
+  color: var(--text-primary);
+  /* border: 1px solid white; */
+  height: 100dvh;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+#nav{
+  padding: 0.5rem;
+  padding-right: 1rem;
+  border-radius: var(--border-radius);
+  border: 2px solid var(--border);
+  height: 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+#nav img{
+  width: 3rem;
+  height: 100%;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
-} */
+#nav-button{
+  height: 100%;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  text-decoration: unset;
+  color: var(--text-secondary);
+  margin: 1rem;
+}
+
+#nav-button:hover{
+  background-color: var(--background-secondary);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+#nav-button:active{
+  background-color: var(--focus);
+}
+
+#profile{
+  border: 2px solid var(--border);
+  width: 250px;
+  height: 500px;
+  border-radius: var(--border-radius);
+}
+
+#app{
+  display: flex;
+  /* width: 100dvw; */
+  height: 100dvb;
+  gap: 1rem;
+}
+
+#contents{
+  width: 100%;
+}

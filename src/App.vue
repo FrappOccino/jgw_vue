@@ -1,6 +1,7 @@
 <script setup>
   import Nav from './components/Nav.vue';
   import {RouterView} from 'vue-router';
+  import Profile from './components/Profile.vue';
   import { RouterLink } from 'vue-router';
   // options API
   import {ref} from 'vue'
@@ -16,10 +17,13 @@
 </script>
 
 <template>
-  <Nav />
+  <Profile />
+  <div id="contents">
+    <Nav />
   <!-- Use this when you are using Vue app -->
   <!-- Use <slot /> if using inertia in laravel -->
-  <RouterView /> 
+    <RouterView /> 
+  </div>
 </template>
 
 <style scoped>

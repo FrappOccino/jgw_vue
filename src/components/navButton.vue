@@ -5,5 +5,5 @@
     });
 </script>
 <template>
-    <button><RouterLink :to="route">{{ tabName }}</RouterLink></button>
+    <RouterLink :to="route" id="nav-button">{{ tabName }}</RouterLink>
 </template>

@@ -8,6 +8,14 @@
     ];
     
 </script>
-<template>  
-    <navButton v-for="tab in tabs" :key="tab.name"  :tabName='tab.name' :route='tab.route' />
+<template>
+    <nav id="nav">
+      <navButton 
+        v-for="tab in tabs" 
+        :key="tab.name"  
+        :tabName='tab.name' 
+        :route='tab.route'
+      />
+      <img src="../assets/logo.svg" alt="">
+    </nav>  
 </template>
