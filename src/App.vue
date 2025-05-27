@@ -19,7 +19,7 @@
   <Nav />
   <!-- Use this when you are using Vue app -->
   <!-- Use <slot /> if using inertia in laravel -->
-  <RouterView /> 
+  <RouterView /> gasdgasdgasdgasgdasgasgasgs
 </template>
 
 <style scoped>
