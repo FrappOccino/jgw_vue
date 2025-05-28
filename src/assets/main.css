@@ -93,8 +93,25 @@ body{
 #profile{
   border: 2px solid var(--border);
   width: 250px;
-  height: 500px;
+  height: 400px;
   border-radius: var(--border-radius);
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+#profile img{
+  margin-top: 2rem;
+  border: 2px solid var(--border);
+  width: 10rem;
+  height: 10rem;
+  align-content: center;
+  border-radius: var(--border-radius);
+  /* object-fit: none; */
 }
 
 #app{
@@ -107,3 +124,4 @@ body{
 #contents{
   width: 100%;
 }
+
